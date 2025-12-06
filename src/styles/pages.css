@@ -1,0 +1,90 @@
+
+.container {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--accent-color);
+}
+.startPage {
+  height: 90vh;
+  width: 60vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  border: var(--purple) 10px solid;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 10px 20px #b67609;
+}
+
+
+
+.startPage h1 {
+  font-size: 50px;
+  color: var(--accent-color);
+  font-weight: 800;
+}
+
+.startPage p,
+.startPage .button {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.startPage p {
+  color: var(--accent-color);
+}
+
+.startPage .button {
+  background-image: url("/src/assets/BackButton.PNG");
+  background-size: 100% 100%;
+  width: 170px;
+  height: 80px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  margin-top: 5vh;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.button p {
+  color: white;
+}
+
+.startPage .button:hover {
+  filter: brightness(1.06);
+  transform: scale(1.1);
+}
+
+.sprite {
+  margin-left: 30%;
+  width: 30vw;
+  height: 30vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spriteAnim 3s steps(1) infinite;
+}
+
+@keyframes spriteAnim {
+  0% {
+    background-image: url("/src/assets/CatSprite1.PNG");
+  }
+  50% {
+    background-image: url("/src/assets/CatSprite2.PNG");
+  }
+  100% {
+    background-image: url("/src/assets/CatSprite1.PNG");
+  }
+}
+
+.startPage:hover {
+    transform: scale(1.01);
+}
